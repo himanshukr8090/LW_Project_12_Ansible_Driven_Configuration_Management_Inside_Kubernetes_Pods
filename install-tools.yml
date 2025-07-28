@@ -1,0 +1,8 @@
+- name: Install curl on web pod
+  hosts: web
+  tasks:
+    - name: Install curl
+      apt:
+        name: curl
+        state: present
+        update_cache: yes
